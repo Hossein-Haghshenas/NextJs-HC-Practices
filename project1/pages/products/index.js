@@ -3,7 +3,7 @@ import React from 'react'
 
 const ProductsPage = () => {
     return (
-        <>
+        <div>
             <h1>ProductsPage</h1>
             <h2>
                 <Link href="products/books" >
@@ -15,7 +15,7 @@ const ProductsPage = () => {
                 Games list
                 </Link>
             </h2>
-        </>
+        </div>
 
     )
 }

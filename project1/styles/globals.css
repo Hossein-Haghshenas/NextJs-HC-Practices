@@ -19,8 +19,17 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
+}
+
+header,
+main,
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
 }
