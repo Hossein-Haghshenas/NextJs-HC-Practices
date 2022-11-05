@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 
-const gameDetail = () => {
+const GameDetail = () => {
     const router = useRouter()
     const gameId = router.query.gameId
     return (
@@ -8,4 +8,4 @@ const gameDetail = () => {
     )
 }
 
-export default gameDetail
+export default GameDetail
