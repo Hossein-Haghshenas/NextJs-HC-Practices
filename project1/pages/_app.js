@@ -1,12 +1,12 @@
 import Layout from '../layouts/layout'
 import '../styles/globals.css'
-import { Poor_Story } from '@next/font/google'
+import { Poppins } from '@next/font/google'
 
-const poorStory = Poor_Story({ weight: '400', subsets: ['latin'] })
+const poppins = Poppins({ weight: ["100", "200", "300", "400", "500", "600", "700", "800"], subsets: ['latin', 'latin-ext'] })
 
 function MyApp({ Component, pageProps }) {
-  return <Layout>
-    <Component className={poorStory.className} {...pageProps} />
+  return <Layout className={poppins.className} >
+    <Component  {...pageProps} />
   </Layout>
 }
 

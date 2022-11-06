@@ -1,10 +1,10 @@
 
-const Layout = ({ children }) => {
+const Layout = ({ children, ...rest }) => {
     return (
         <>
-        <header>its header !</header>
-        <main>{children}</main>
-        <footer> Created by Hossein-Developer</footer>
+            <header>its header !</header>
+            <main {...rest} >{children}</main>
+            <footer> Created by Hossein-Developer</footer>
         </>
     )
 }
