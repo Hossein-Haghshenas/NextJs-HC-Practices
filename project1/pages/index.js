@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link';
+import HomeLayout from '../layouts/Home.layout';
 
 export default function Home() {
   return (
@@ -16,5 +17,11 @@ export default function Home() {
         </Link>
       </h2>
     </div>
+  )
+}
+
+Home.getLayout = function getLayout(page) {
+  return (
+      <HomeLayout>{page}</HomeLayout>
   )
 }
